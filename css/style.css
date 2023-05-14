@@ -1,3 +1,7 @@
+:root {
+    --min-height: 650px;
+  }
+
 body{
     margin: 0;
     padding: 0;
@@ -7,6 +11,7 @@ body{
 /*  Menu Bienvenida */
 
 .inicio{
+    min-height: var(--min-height);
     background: linear-gradient(90deg, 
                                 rgba(0,0,0,0.5),
                                 rgba(0,0,0,0.5)),
@@ -67,6 +72,7 @@ main section p{
 /*  Contenidos del Programa */
 
 .contenidosPrograma {
+    min-height: var(--min-height);
     background-color: whitesmoke;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -78,7 +84,7 @@ main section p{
 }
 
 .card{
-
+    min-height: 500px;
     background-color: aliceblue;
 }
 
@@ -89,9 +95,12 @@ main section p{
 
 /*  Inscripciones   */
 
+.inscripciones{
+    min-height: var(--min-height);
+}
 
 .divFormulario{
-    background-color: rgb(255, 211, 0);;
+    background-color: rgb(255, 211, 0);
 }
 
 
@@ -105,11 +114,10 @@ main section p{
     border-color: black;
 }
 
-
-
 /*  Entrega de Diplomas*/
 
 .diplomas{
+    min-height: var(--min-height);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
