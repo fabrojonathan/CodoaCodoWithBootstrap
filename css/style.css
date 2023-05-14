@@ -143,3 +143,30 @@ footer nav a img{
     width: 32px;
     height: 32px;
 }
+
+
+
+@media (min-width: 1023px){
+    .inscripciones{
+        min-height: 60vh;
+    }
+
+    .inscripciones .divInscripciones, .divFormulario{
+        min-height: 60vh;
+    }
+
+    .diplomas{
+        min-height: 60vh;
+    }
+}
+
+/*  Animaciones   */
+button:hover{
+    width: 90%;
+    font-size: 130%;
+}
+
+a:hover{
+    color:whitesmoke;
+    font-size: 130%;
+}
