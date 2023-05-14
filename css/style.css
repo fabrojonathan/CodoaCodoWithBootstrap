@@ -145,6 +145,15 @@ footer nav a img{
 }
 
 
+@media (min-width: 767px){
+
+
+    .diplomas{
+        min-height: 60vh;
+    }
+
+}
+
 
 @media (min-width: 1023px){
     .inscripciones{
