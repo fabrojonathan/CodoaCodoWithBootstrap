@@ -12,31 +12,31 @@
 
 <body>
     <div class="inicio"> <!-- Img bienvenida -->
-        <header class="col">
+        <header class="col col-md-12">
 
-            <div class="icono row text-center"><!-- img -->
+            <div class="icono row text-center text-md-start ms-md-2"><!-- img -->
                 <a href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/" target="_blank"><img src="./assets/images/logo-CAC.webp" alt="Codo a Codo"></a>
             </div>
 
-            <div class="w-75 mx-auto"><!-- nav -->
-                <nav class="col text-center p-2 fs-5">
-                    <a class="d-block m-3" href="#contenidosPrograma">Programa</a>
-                    <a class="d-block m-3" href="#modalidadRequisitos">Modalidad y Requisitos</a>
-                    <a class="d-block m-3" href="#inscripciones">Inscripciones</a>
-                    <a class="d-block m-3" href="#entregaDiplomas">Entrega Diplomas</a>
-                    <a class="comprarTickets d-block m-3" href="#comprarTickets">Comprar Tickets</a>
+            <div class="col-10  mx-auto col-md-11"><!-- nav -->
+                <nav class="text-center p-2 fs-5 d-md-flex align-items-md-center">
+                    <a class="d-block mb-3" href="#contenidosPrograma">Programa</a>
+                    <a class="d-block mb-3" href="#modalidadRequisitos">Modalidad y Requisitos</a>
+                    <a class="d-block mb-3" href="#inscripciones">Inscripciones</a>
+                    <a class="d-block mb-3" href="#entregaDiplomas">Entrega Diplomas</a>
+                    <a class="comprarTickets d-block mb-3" href="#comprarTickets">Comprar Tickets</a>
                 </nav>
             </div>
         </header>
         
-        <main class="mt-5 p-4">
-            <section class="col text-center">
+        <main class="mt-5 p-4 col-10 mx-auto">
+            <section class="text-center">
                 <h1 class="m-1 fw-bolder">Codo a Codo 4.0</h1>
                 <div class="m-4">
                     <h2 class="fw-light fs-4">TU CARRERA HOY.</h2>
                     <h2 class="titleColor fw-light fs-4">TU TRABAJO MAÑANA</h2>
                 </div>
-                <p class="fs-6 fw-light">Preparamos a los estudiantes para la demanda <br>
+                <p class="fs-5 fw-light">Preparamos a los estudiantes para la demanda <br>
                 de las empresas más innovadoras del área de <br>
                 programacion</p>
             </section>
@@ -45,7 +45,7 @@
 
 
 
-    <section class="contenidosPrograma p-2"> <!-- Contenidos del Programa -->
+    <section class="contenidosPrograma p-2 p-md-3"> <!-- Contenidos del Programa -->
         <a href="" id="contenidosPrograma"></a>
         <h2 class="text-center fw-bold" >Contenidos del Programa</h2>
 
@@ -77,8 +77,9 @@
             <h2 class="text-center">Modalidad y Requisitos</h2>
         </div>
 
-        <div class="containerCards">
-            <div class="card my-4 px-3"><!-- Card 1 -->
+        <div class="containerCards d-md-flex flex-md-row row-cols-md-5 gap-md-3 justify-content-md-center">
+
+            <div class="card my-4 px-3 col-md-5"><!-- Card 1 -->
                 <h3 class="text-center mt-4 fw-bold">Modalidad Virtual</h3>
                 <img class="w-75 mx-auto" src="./assets/images/Developper_02__Converted__generated.jpg" alt="Modalidad Virtual">
                 <ul class="list-unstyled fs-5">
@@ -89,7 +90,7 @@
                 </ul>
             </div>
     
-            <div class="card my-4 px-3"><!-- Card 2 -->
+            <div class="card my-4 px-3 col-md-5"><!-- Card 2 -->
                 <h3 class="text-center mt-4 fw-bold">Requisitos</h3>
                 <img class="w-75 mx-auto" src="./assets/images/1048_U1RVRElPIEtBVCAxMDktMDk.jpg" alt="Requisitos">
                 <ul class="list-unstyled fs-5">
@@ -100,6 +101,7 @@
                     <li class="my-2">Acceso a internet y a una computadora</li>
                 </ul>                
             </div>
+
         </div>
 
     </section>
@@ -119,14 +121,14 @@
 
 
         <div class="divFormulario h-50 d-flex flex-column justify-content-center"><!-- Formulario -->
-            <form class="w-100 d-flex flex-column align-items-center" action="">
-                <input class="d-block w-75 fs-5 my-2" type="text" placeholder="Nombre">
-                <input class="d-block w-75 fs-5 my-2" type="text" placeholder="Apellido">
-                <input class="d-block w-75 fs-5 my-2" type="text" placeholder="Email">
-                <input class="d-block w-75 fs-5 my-2" type="text" placeholder="Celular">
+            <form class="col-12 d-flex flex-column align-items-center" action="">
+                <input class="d-block col-10 fs-5 my-2" type="text" placeholder="Nombre">
+                <input class="d-block col-10 fs-5 my-2" type="text" placeholder="Apellido">
+                <input class="d-block col-10 fs-5 my-2" type="text" placeholder="Email">
+                <input class="d-block col-10 fs-5 my-2" type="text" placeholder="Celular">
 
-                <button class="btnEnviar d-block w-75 fs-5 my-2" type="submit">Enviar</button>
-                <button class="d-block w-75 fs-5 my-2">Limpiar</button>
+                <button class="btnEnviar d-block col-10 fs-5 my-2" type="submit">Enviar</button>
+                <button class="d-block col-10 fs-5 my-2">Limpiar</button>
             </form>
         </div>
 
@@ -135,11 +137,10 @@
 
 
 
-    <section class="diplomas"> <!-- Entrega de Diplomas Egresados -->
-        <a href="" id="entregaDiplomas"></a>
+    <section id="entregaDiplomas" class="diplomas d-flex mb-5 flex-column align-items-center text-center justify-content-around flex-md-row"> <!-- Entrega de Diplomas Egresados -->
 
-        <div class="divImgDiplomas h-50"><!-- Img Diplomas -->
-            <img class="w-100 h-100" src="./assets/images/centro-nacional-recoleta.jpg" alt="Centro Cultural Recoleta">
+        <div class="divImgDiplomas col-md-6"><!-- Img Diplomas -->
+            <img class="h-75 w-100" src="./assets/images/centro-nacional-recoleta.jpg" alt="Centro Cultural Recoleta">
         </div>
 
 

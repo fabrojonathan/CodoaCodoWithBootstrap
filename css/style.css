@@ -49,6 +49,8 @@ header nav a{
 
 main section{
     color: whitesmoke;
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
 }
 
 main section h1{
@@ -117,7 +119,7 @@ main section p{
 /*  Entrega de Diplomas*/
 
 .diplomas{
-    min-height: var(--min-height);
+    min-height: calc(var(--min-height) - 100px);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
