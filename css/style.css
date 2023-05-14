@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+/*  Menu Bienvenida */
+
+.inicio{
+    background: linear-gradient(90deg, 
+                                rgba(0,0,0,0.5),
+                                rgba(0,0,0,0.5)),
+                                url('../assets/images/codigo_html.jpg');
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.icono img{
+    margin: 25px auto;
+    width: 150px;
+    height: 65px;
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+}
+
+header nav{
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.comprarTickets{
+    color: rgb(255, 211, 0);
+}
+
+/*  Section Bienvenida  */
+
+
+main section{
+    color: whitesmoke;
+}
+
+main section h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main section h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main section .titleColor{
+    color: rgb(255, 211, 0);;
+}
+
+main section p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/*  Contenidos del Programa */
+
+.contenidosPrograma {
+    background-color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*  Modalidad y Requisitos  */
+
+.modalidadRequisitos{
+    background-color: rgb(29, 28, 26);
+}
+
+.card{
+
+    background-color: aliceblue;
+}
+
+.modalidadRequisitos h2{
+    color: rgb(255, 211, 0);;
+}
+
+
+/*  Inscripciones   */
+
+
+.divFormulario{
+    background-color: rgb(255, 211, 0);;
+}
+
+
+.divFormulario input, button{
+    border-radius: 3px;
+}
+
+.btnEnviar{
+    background-color: black;
+    color: whitesmoke;
+    border-color: black;
+}
+
+
+
+/*  Entrega de Diplomas*/
+
+.diplomas{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*  Footer  */
+
+footer{
+    background: linear-gradient(90deg, 
+                                rgba(0,0,0,0.5),
+                                rgba(0,0,0,0.5)),
+                                url('../assets/images/codigo_html.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+footer a img{
+    width: 150px;
+    height: 65px;
+}
+
+footer nav a img{
+    width: 32px;
+    height: 32px;
+}
