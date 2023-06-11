@@ -5,30 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codo a Codo 4.0</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body>
-    <header class=".container">
-        <div class="row d-lg-flex align-items-center px-lg-3">
-            <div class="col-3 col-md-2 d-lg-block col-lg-auto ms-lg-5">
-                <img class="img-fluid" id="logoimg" src="../assets/android-chrome-192x192.png" alt="Logo">
+    <div class="inicioComprarTickets">
+        <header class="col col-md-12 d-lg-flex align-items-lg-center">
+
+            <div class="icono row text-center text-md-start ms-md-2 d-lg-inline col-lg-3 text-lg-center"><!-- img -->
+                <a href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/" target="_blank"><img src="../assets/images/logo-CAC.webp" alt="Codo a Codo"></a>
             </div>
 
-            <div class="col-9 d-flex justify-content-start align-items-center col-md-2 p-md-0 d-lg-block p-lg-0 col-lg-auto">
-                <h1 class="fs-5 text-white">Conf Bs As</h1>
+            <div class="col-10  mx-auto col-lg-7"><!-- nav -->
+                <nav class="text-center p-2 fs-6 d-md-flex align-items-md-center justify-content-md-between justify-content-lg-between">
+                    <a class="d-block ms-2" href="../index.html">Inicio</a>
+                </nav>
             </div>
-
-            <div id="boxLinks" class="mb-2 mb-md-0 col-md d-md-flex justify-content-between d-lg-block text-lg-end pe-lg-5">
-                <a id="link" class="d-block p-1 p d-lg-inline" href="/index.html">La conferencia</a>
-                <a id="link" class="d-block mt-1 p-1 d-lg-inline" href="">Los oradores</a>
-                <a id="link" class="d-block mt-1 p-1 d-lg-inline" href="">El lugar y la fecha</a>
-                <a id="link" class="d-block mt-1 p-1 d-lg-inline" href="">Conviértete en orador</a>
-                <a id="link" class="d-block mt-1 p-1 d-lg-inline" href="/pages/comprar_tickets.html">Comprar Tickets</a>
-            </div>
-        </div>
-    </nav>
-    </header>
+        </header>
+    </div>
 
     <section id="cards" class="p-3 d-flex flex-column text-center align-items-center flex-md-row col-md-10 gap-1 m-md-auto justify-content-center">
         <div class="card1 border border-4 border-primary mb-1 mt-4 d-flex flex-column justify-content-center m-md-0">
@@ -56,24 +50,26 @@
             <h6 class="mt-4 mb-0 fs-6 fw-light text-center">VENTA</h6>
             <h3 class="fs-2 fw-bold mb-4">VALOR DE TICKET $200</h3>
         </div>
-        <div class="text-center flex-column">
-            <form action="" novalidate>
+        <div class="text-center">
+            <form class="d-flex flex-column align-items-center col-12" action="" novalidate>
                 <input id="nombre" class="col-10 mb-2" type="text" name="nombre" placeholder="Nombre" required>
                 <input id="apellido" class="col-10 mb-2" type="text" name="apellido" placeholder="Apellido" required>
                 <input id="correo" class="col-10 mb-2" type="email" name="correo" placeholder="Correo" required>
-                <label id="txtCantidad" class="col-5 text-start" for="cantidad">Cantidad</label>
+                <div class="col-11">
+                    <label id="txtCantidad" class="col-5 text-start mb-1" for="cantidad">Cantidad</label>
 
-                <label id="txtCategoria" class="col-5 text-start" for="categoria">Categoria</label>
-
-                <input id="cantidad" class="col-5 mb-2" type="inputForm" type="text" name="cantidad" placeholder="Cantidad" required>
-
-                <select id="categoria" class="d-inline form-select-sm col-5 mb-2" name="categoria" required>
-                    <option value="" selected>Seleccione una opción</option>
-                    <option value="0">Sin categoria</option>
-                    <option value="1">Estudiante</option>
-                    <option value="2">Trainer</option>
-                    <option value="3">Junior</option>
-                </select>
+                    <label id="txtCategoria" class="col-5 text-start mb-1" for="categoria">Categoria</label>
+    
+                    <input id="cantidad" class="col-5 mb-2 d-inline" type="inputForm" type="text" name="cantidad" placeholder="Cantidad" required>
+    
+                    <select id="categoria" class="d-inline form-select-sm col-5 mb-2" name="categoria" required>
+                        <option value="" selected>Seleccione una opción</option>
+                        <option value="0">Sin categoria</option>
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainer</option>
+                        <option value="3">Junior</option>
+                    </select>
+                </div>
 
                 <div id="importeBackGround" class="col-10 m-0 m-auto p-2 my-3 rounded-2 d-flex justify-content-between text-start">
                     Total a Pagar: $
@@ -113,21 +109,25 @@
                 </div>
                     
 
-                <button type="reset" id="btnBorrar" class="col-10 my-3 rounded-2">Borrar</button>
-                <button type="button" id="btnResumen" class="col-10 mb-2 rounded-2">Resumen</button>
+                <div class="col-11">
+                <button type="reset" id="btnBorrar" class="col-5 my-3 rounded-2 d-inline">Borrar</button>
+                <button type="button" id="btnResumen" class="col-5 mb-2 rounded-2 d-inline">Resumen</button>
+                </div>
 
             </form>
         </div>
     </section>
 
-    <footer class="d-flex flex-column align-items-center py-2 flex-md-row justify-content-md-center gap-md-4 px-md-5">
-        <a id="link" class="mb-1" href="">Preguntas frecuentes</a>
-        <a id="link" class="mb-1" href="">Contáctanos</a>
-        <a id="link" class="mb-1" href="">Prensa</a>
-        <a id="link" class="mb-1" href="">Conferencias</a>
-        <a id="link" class="mb-1" href="">Términos y condiciones</a>
-        <a id="link" class="mb-1" href="">Privacidad</a>
-        <a id="link" class="mb-1" href="">Estudiantes</a>
+    <footer class="text-center py-5">
+        
+        <a class="d-block mb-5" href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/" target="_blank"><img src="../assets/images/logo-CAC.webp" alt="Codo a Codo"></a>
+        
+        <nav class="d-lg-flex flex-lg-row justify-content-lg-around px-lg-5 mx-lg-5">
+            <a class="d-block my-4 d-lg-inline" href="https://www.instagram.com/programacodoacodo/?hl=es" target="_blank"><img src="../assets/images/instagram.png" alt="Logo Instagram"></a>
+            <a class="d-block my-4 d-lg-inline" href="https://www.facebook.com/codoacodooficial" target="_blank"><img src="../assets/images/facebook.png" alt="Logo Facebook"></a>
+            <a class="d-block my-4 d-lg-inline" href="https://wa.me/######?text=¡Estoy+interesado!" target="_blank"><img src="../assets/images/whatsapp.png" alt="Logo Whatsup"></a>
+        </nav>
+
     </footer>
 
     <script src="../json/comprar_tickets.js"></script>
